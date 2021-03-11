@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-	name='aruodas_scraper',
+	name='scraper',
 	version='0.0.1',
 	description='Scraping Package for the 2nd capstone project',
 	author='Martynas',
