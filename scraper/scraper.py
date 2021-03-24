@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from numpy import random, nan
+from numpy import random
 import pandas as pd
 import re
 import time
@@ -111,7 +111,7 @@ class Scraper:
             heating = info[5]
             condition = info[6]
           elif len(info) == 6:
-            material, heating, condition = nan, nan, nan 
+            material, heating, condition = "NaN", "NaN", "NaN" 
             if bool(set([info[4], info[5]]) & set(all_materials)):
               material = list(set([info[4], info[5]]) & set(all_materials))[0]
             elif bool(set([info[4], info[5]]) & set(all_heat)):
